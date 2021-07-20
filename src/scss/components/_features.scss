@@ -1,0 +1,27 @@
+.features {
+  .feature__info {
+    a {
+      display: inline-block;
+      margin-top: 40px;
+    }
+    padding-top: 100px;
+  }
+  .feature__item {
+    padding: 40px 30px;
+    margin-top: 25px;
+    border-radius: $border-radius;
+    text-align: center;
+    box-shadow: 0 1rem 3rem $shadow-color;
+    background-color: $bg-color;
+    &:hover {
+      transition: 0.3s;
+      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+    }
+    img {
+      width: 65px;
+    }
+    a {
+      margin-top: 25px;
+    }
+  }
+}

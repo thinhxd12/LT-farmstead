@@ -1,0 +1,50 @@
+.block__info__title {
+  i {
+    font-size: 30px;
+    color: $primary-color;
+    margin-right: 10px;
+  }
+  h5 {
+    @include styeText(24px, 600, $heading-color);
+  }
+  display: flex;
+}
+
+.block__info {
+  p {
+    font-family: "Source Sans Pro", sans-serif;
+    @include styeText(17px, 400, $font-color);
+    line-height: 27px;
+    padding-left: 40px;
+    margin-top: 25px;
+  }
+}
+
+.block__item {
+  position: relative;
+  .block__item__img {
+    margin-left: 100px;
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+  .block__item__info {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 40px;
+    width: 300px;
+    // height: 187px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    h2 {
+      @include styeText(70px, 600, $white-color);
+      line-height: 80px;
+    }
+    h3 {
+      @include styeText(18px, 600, $white-color);
+      font-family: "Source Sans Pro", sans-serif;
+    }
+  }
+}

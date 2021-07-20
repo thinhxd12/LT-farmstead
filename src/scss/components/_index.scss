@@ -1,0 +1,27 @@
+.index__item__info {
+  h4 {
+    font-size: 22px;
+  }
+  p {
+    @include styeText(17px, 400, $font-color);
+    line-height: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+
+.index__item {
+  padding: 2rem 1rem;
+  margin-top: 30px;
+  transition: 0.3s ease-in;
+  background: $bg-color;
+  border-radius: 10px;
+  border: 1px solid $bg-color;
+  &:hover {
+    border: 1px solid $border-color-light;
+    .index__item__info {
+      h4 {
+        color: $secondary-color;
+      }
+    }
+  }
+}

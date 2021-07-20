@@ -1,0 +1,57 @@
+.services {
+  background-color: $secondary-color;
+  .services__info {
+    position: relative;
+    color: $white-color;
+    h5 {
+      font-size: 22px;
+    }
+    h4 {
+      @include styeText(40px, 600, $white-color);
+      line-height: 50px;
+    }
+    p {
+      @include styeText(1.25rem, 300, $white-color);
+      font-family: "Source Sans Pro", sans-serif;
+      padding-top: 20px;
+    }
+    h1 {
+      position: absolute;
+      color: #fff;
+      font-weight: bold;
+      z-index: 0;
+      opacity: 0.14;
+      font-size: 12vw;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+}
+
+.service__item {
+  border-radius: 20px;
+  overflow: hidden;
+  .service__item__info {
+    background-color: $bg-color;
+    padding: 30px 20px;
+    label {
+      color: $secondary-color;
+      display: inline-block;
+      background: rgba(0, 159, 77, 0.16);
+      padding: 5px 20px;
+      border-radius: $border-radius-full;
+      font-weight: 600;
+    }
+    a {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      margin: 15px 0;
+    }
+    p {
+      @include styeText(17px, 400, $font-color);
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 27px;
+    }
+  }
+}

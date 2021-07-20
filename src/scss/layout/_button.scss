@@ -1,0 +1,24 @@
+.btn__LearnMore{
+    text-transform: uppercase;
+    @include styeText(16px,600,$white-color);
+    line-height: 26px;
+    background-color: $primary-color;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.25s ease-in-out;
+    border: none;
+    &:hover{
+        background-color: $secondary-color;
+        color: $white-color;
+    }
+}
+
+.btn__LearnMore__1{
+    @extend .btn__LearnMore;
+    border-radius: 0 30px 30px 0;
+    background: $secondary-color;
+    &:hover{
+        background: $primary-color;
+    }
+}

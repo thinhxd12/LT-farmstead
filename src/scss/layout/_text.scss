@@ -1,0 +1,31 @@
+.txt__title {
+  @include styeText(40px, 600, $heading-color);
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+}
+
+.txt__title__small {
+  @include styeText(22px, 400, $primary-color);
+  padding: 0;
+  margin: 0;
+  line-height: 28px;
+}
+
+.txt__text {
+  @include styeText(17px, 400, $font-color);
+  padding: 0;
+  margin: 0;
+  line-height: 27px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.title__link {
+  @include styeText(20px, 600, $heading-color);
+  line-height: 28px;
+  display: block;
+  transition: all 0.5s;
+  &:hover {
+    color: $secondary-color;
+  }
+}
